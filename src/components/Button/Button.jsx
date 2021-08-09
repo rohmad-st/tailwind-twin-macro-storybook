@@ -4,12 +4,7 @@ import * as React from 'react';
 import { buttonDefaultStyle } from './styles';
 import { ButtonSizes, ButtonVariants } from './theme';
 
-export const Button = ({
-  variant = 'default',
-  size = 'sm',
-  children,
-  ...rest
-}) => {
+export const Button = ({ variant, size, children, ...rest }) => {
   return (
     <button
       css={[buttonDefaultStyle, ButtonVariants[variant], ButtonSizes[size]]}
